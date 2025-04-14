@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to CSS</title>
+    <style>
+        body {
+            font-family: "Helvetica", "Segoe UI", "sans-serif";
+        }
+        /*span {*/
+        /*    background-color: chocolate;*/
+        /*}*/
+        .child div > span {
+            background-color: #0b84fe;
+        }
+        /*p {*/
+        /*    background: orange;*/
+        /*}*/
+        /*p {*/
+        /*    background: green;*/
+        /*}*/
+        /*the last element in this case p is the key selector*/
+        .hotdog p {
+            background: yellow;
+        }
+        .hotdog p.mustard {
+            background: red;
+        }
+        .hotdog .mustard {
+            background-color: aqua;
+        }
+        .adjacent-sibling span + span {
+            background-color: rebeccapurple;
+        }
+        .btn {
+            font-size: 18px;
+        }
+        .btn-danger {
+            background: red;
+            font-size: 2em;
+        }
+        .btn-success {
+            background: green;
+            font-size: 2em;
+        }
+        .indent {
+            text-indent: 2em;
+        }
+    </style>
+
+</head>
+    <body>
+        <div class="hotdog">
+            <p>paragraph</p>
+            <p>paragraph</p>
+            <p class = "mustard">paragraph</p>
+        </div>
+        <h1>Descendant selector (space)</h1>
+        <div>
+            <p>
+                <span> Span 1. </span>
+                <span> Span 2. </span>
+            </p>
+            <span> Span 3. </span>
+        </div>
+        <span> Span 4. </span>
+        <h1>Child selector (>)</h1>
+        <div class = "child">
+            <p>
+                <span> Span 1. </span>
+                <span> Span 2. </span>
+            </p>
+            <span> Span 3. </span>
+        </div>
+        <span> Span 4. </span>
+        <h1>Adjacent Sibling selector (+)</h1>
+        <div class = "adjacent-sibling">
+            <p>
+                <span> Span 1. </span>
+                <span> Span 2. </span>
+            </p>
+            <span> Span 3. </span>
+        </div>
+        <h1>Multiple classes</h1>
+        <a class = "btn btn-danger "href="">Danger</a>
+        <a class = "btn btn-success "href="">Success</a>
+        <p class="indent">This is text</p>
+        <p class="indent">This is text</p>
+        <p class="indent">This is text</p>
+        <p class="indent">This is text</p>
+    </body>
+</html>

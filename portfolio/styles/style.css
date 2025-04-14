@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter","Arial","sans-serif";
+}
+
+.head-foot {
+    background-color: #000000;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 30px;
+    color: whitesmoke;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+}
+
+ul.horizontal-list {
+    list-style-type: none;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    margin:0;
+}
+
+ul.horizontal-list li {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+ul.horizontal-list li a {
+    color: #fcfcfc;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+ul.horizontal-list li a:hover {
+    /*background-color: #0047a4;*/
+    background-color: white;
+    color: black;
+}
+
+p.first-main-title {
+    padding-top: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px black;
+}
+
+p.first-main-title a:hover {
+    color: #2ade2a;
+    text-decoration: underline;
+}
+
+p.first-main-title a:visited {
+    color: #2ade2a;
+}
+
+.hobbies  p {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hobbies p a {
+    font-size: 18px;
+    text-decoration: none;
+    transition: font-size 0.3s ease-in-out; /* Smooth transition */
+
+    color: #ffffff;
+}
+
+.hobbies p a:hover {
+    font-size: 20px;
+    color: #bbb8b8;
+    padding: 5px 8px;
+    border-radius: 6px;
+
+    /*background: #0b84fe;
+    /*-o-transition:color 10ms ease-out, background 1s ease-in;*/
+    /*-ms-transition:color 10ms ease-out, background 1s ease-in;*/
+    /*-moz-transition:color 10ms ease-out, background 1s ease-in;*/
+    /*-webkit-transition:color 10ms ease-out, background 1s ease-in;*/
+    /*!* ...and now override with proper CSS property *!*/
+    /*transition:color 1ms ease-out, background 0.2s ease-in;*/
+}
+
+#footer-name {
+    font-size: 12px;
+    font-family: "Inter", "Segoe UI", "sans-serif";
+}
+
+audio {
+    align-content: center;
+    margin: 30px;
+}
+
+.audio-player{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+}
+
+.main-content{
+    background-image:url("../images/the-beatles.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content-main-page {
+    background-image: url("../images/main-page-back.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    ul.horizontal-list {
+        list-style-type: none;
+        padding: 30px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin:0;
+    }
+
+}

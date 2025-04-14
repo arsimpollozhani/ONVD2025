@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy main</title>
+    <link rel="stylesheet" href="main-function-style.css">
+    <script src="../copy-snippet.js"></script>
+
+</head>
+<body>
+<pre id="codeSnippet">
+
+  #include< iostream >
+  using namespace std;
+
+    //code here
+
+  int main() {
+    Temperature obj;
+    int n;
+    cin >> n;
+    int cmd;
+    float k;
+    for (int i = 0; i < n; i++) {
+        cin >> cmd;
+        switch (cmd) {
+            case 1: {
+                cin >> k;
+                obj.set(k);
+                obj.print();
+                break;
+            }
+            case 2: {
+                obj.changeTemp();
+                obj.print();
+                break;
+            }
+            case 3: {
+                Temperature obj3;
+                cin >> k;
+                obj3.set(k);
+                obj3.changeTemp();
+                obj3.print();
+                break;
+            }
+            default: {
+                obj.print();
+                break;
+            }
+        }
+    }
+}
+</pre>
+<button onclick="copyCode()">Copy</button>
+</body>
+</html>
