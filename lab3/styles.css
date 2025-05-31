@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    color: black;
+    font-family: "Segoe UI", "sans-serif";
+}
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.logo-right {
+    position: absolute;
+    top: 31px;
+    left: 20px;
+}
+
+
+ul li {
+    margin: 10px;
+    padding: 5px 10px;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.zoom-text-effect:hover {
+    font-size: 30px;
+}
+
+.main-page-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 450px;
+    align-items: center;
+    background-color: #eaeaea;
+    margin: 0;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-left ul, .contact-right ul,  .contact-left {
+    list-style-type: none;
+    text-align: left;
+}
+
+.contact-right {
+    margin-left: 50px;
+}
+
+.contact-left{
+    margin-right: 50px;
+}
+
+.email-send {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-send a {
+    padding: 5px 10px;
+    background-color: #0b84fe;
+    border-radius: 8px;
+    text-decoration: none !important;
+}
+
+.email-send a:hover {
+    background-color: #0859ad;
+    border-radius: 8px;
+}
