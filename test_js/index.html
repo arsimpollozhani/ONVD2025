@@ -1,15 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph</title>
+    <script>
+        function changeParagraph() {
+            document.getElementById("p").innerHTML = "This is the updated paragraph!";
+        }
+
+        let counter = 0;
+        function count () {
+
+            counter++;
+            document.getElementById("count-num").innerHTML = counter;
+
+            if (counter === 5) {
+                alert("You have reached 5.")
+            }
+        }
+
+    </script>
 </head>
-<body>
-    <div>
-
-    </div>
-
+<body id="body">
+    <p id="p">This is a paragraph.</p>
+    <button onclick="changeParagraph()">Change Text</button>
+    <h3 id="count-num">0</h3>
+    <button onclick="count()">Count</button>
+    <button onclick="changeBodyColor()">Change body color</button>
+</body>
 </html>
